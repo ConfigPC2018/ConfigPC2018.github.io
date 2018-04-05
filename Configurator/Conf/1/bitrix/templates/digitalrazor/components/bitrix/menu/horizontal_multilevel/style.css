@@ -1,0 +1,111 @@
+
+
+#horizontal-multilevel-menu a {
+    display: block;
+    padding: 5px 10px;
+    text-decoration: none;
+    text-align: center
+}
+#horizontal-multilevel-menu a > span{
+    font-size: 0.7em;
+    display: block;
+    margin-top: -7px;
+}
+#horizontal-multilevel-menu li {
+    float: left
+}
+
+#horizontal-multilevel-menu li a.root-item {
+    color: #fff;
+    padding: 7px 12px
+}
+
+
+#horizontal-multilevel-menu a.parent {
+    background: url(images/arrow.gif) center right no-repeat;
+    background-size: 22px;
+}
+
+
+
+
+
+#horizontal-multilevel-menu li li.item-selected, #horizontal-multilevel-menu li li:hover{
+    border-left: 2px solid #117cc0;
+    margin-left: -4px;
+    padding-left: 2px;
+}
+
+#horizontal-multilevel-menu li ul {
+    position: absolute;
+    top: auto;
+    display: none;
+    z-index: 500;
+    height: auto;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.87);
+    padding: 0 4px;
+    list-style: none;
+    color: #fff;
+}
+
+#horizontal-multilevel-menu li li {
+    width: 100%;
+}
+
+#horizontal-multilevel-menu li ul a {
+    text-align: left
+}
+
+#horizontal-multilevel-menu li a, #horizontal-multilevel-menu li:hover li a, #horizontal-multilevel-menu li.jshover li a, #horizontal-multilevel-menu li:hover li:hover li a, #horizontal-multilevel-menu li.jshover li.jshover li a, #horizontal-multilevel-menu li:hover li:hover li:hover li a, #horizontal-multilevel-menu li.jshover li.jshover li.jshover li a, #horizontal-multilevel-menu li:hover li:hover li:hover li:hover li a, #horizontal-multilevel-menu li.jshover li.jshover li.jshover li.jshover li a, #horizontal-multilevel-menu li:hover li:hover li:hover li:hover li:hover li a, #horizontal-multilevel-menu li.jshover li.jshover li.jshover li.jshover li.jshover li a {
+    color: #FFFFFF;
+    font-family: 'Russo One', sans-serif;
+    text-transform: uppercase;
+    font-size: 1.5em
+}
+
+#horizontal-multilevel-menu li:hover li:hover a, #horizontal-multilevel-menu li.jshover li.jshover a, #horizontal-multilevel-menu li:hover li:hover li:hover a, #horizontal-multilevel-menu li.jshover li.jshover li.jshover a, #horizontal-multilevel-menu li:hover li:hover li:hover li:hover a, #horizontal-multilevel-menu li.jshover li.jshover li.jshover li.jshover a #horizontal-multilevel-menu li:hover li:hover li:hover li:hover li:hover a, #horizontal-multilevel-menu li.jshover li.jshover li.jshover li.jshover li.jshover a #horizontal-multilevel-menu li:hover li:hover li:hover li:hover li:hover li:hover a, #horizontal-multilevel-menu li.jshover li.jshover li.jshover li.jshover li.jshover li.jshover a {
+    color: #4f4f4f
+}
+
+#horizontal-multilevel-menu li ul ul {
+    margin: -48px 0 0 calc(100% - 4px);
+}
+
+#horizontal-multilevel-menu li:hover ul ul, #horizontal-multilevel-menu li.jshover ul ul, #horizontal-multilevel-menu li:hover ul ul ul, #horizontal-multilevel-menu li.jshover ul ul ul, #horizontal-multilevel-menu li:hover ul ul ul ul, #horizontal-multilevel-menu li.jshover ul ul ul ul, #horizontal-multilevel-menu li:hover ul ul ul ul ul, #horizontal-multilevel-menu li.jshover ul ul ul ul ul {
+    display: none
+}
+
+#horizontal-multilevel-menu li:hover ul, #horizontal-multilevel-menu li.jshover ul, #horizontal-multilevel-menu li li:hover ul, #horizontal-multilevel-menu li li.jshover ul, #horizontal-multilevel-menu li li li:hover ul, #horizontal-multilevel-menu li li li.jshover ul, #horizontal-multilevel-menu li li li li:hover ul, #horizontal-multilevel-menu li li li li.jshover ul, #horizontal-multilevel-menu li li li li li:hover ul, #horizontal-multilevel-menu li li li li li.jshover ul {
+    display: block
+}
+
+div.menu-clear-left {
+    clear: left
+}
+#horizontal-multilevel-menu *{font-weight: normal;}
+
+@media (max-width: 991px), (max-device-width: 1200px){
+    #horizontal-multilevel-menu{
+        max-width: 100%;
+        width: 22em;
+        margin: 0 auto;
+
+    }
+    #horizontal-multilevel-menu li{
+        display: block;
+        float: none;
+        text-align: center;
+    }
+    #horizontal-multilevel-menu li ul{
+        display: block;
+        position: relative;
+    }
+    #horizontal-multilevel-menu li ul a,#horizontal-multilevel-menu li:hover li a{
+        font-size: 1em;
+        text-align: center;
+    }
+    #horizontal-multilevel-menu > li > a, #horizontal-multilevel-menu li a.root-item{
+        color: #d40000;
+    }
+}
